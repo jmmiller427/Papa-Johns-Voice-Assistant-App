@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Papa Johns Voice Assistant
-//
-//  Created by Matt Miller on 11/5/17.
-//  Copyright © 2017 CS499. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()

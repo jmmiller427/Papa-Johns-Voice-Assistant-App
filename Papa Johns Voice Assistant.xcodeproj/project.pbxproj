@@ -15,6 +15,8 @@
 		7ECD4F201FAF8E30004DBE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F1E1FAF8E30004DBE75 /* LaunchScreen.storyboard */; };
 		7ECD4F2B1FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F2A1FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantTests.m */; };
 		7ECD4F361FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */; };
+		7ECD4F441FAFAE25004DBE75 /* papa-johns.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F431FAFAE25004DBE75 /* papa-johns.png */; };
+		7ECD4F481FAFB26A004DBE75 /* microphone-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F471FAFB26A004DBE75 /* microphone-image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7ECD4F311FAF8E30004DBE75 /* Papa Johns Voice AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Papa Johns Voice AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Papa_Johns_Voice_AssistantUITests.m; sourceTree = "<group>"; };
 		7ECD4F371FAF8E30004DBE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECD4F431FAFAE25004DBE75 /* papa-johns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "papa-johns.png"; path = "../../../../../Desktop/papa-johns.png"; sourceTree = "<group>"; };
+		7ECD4F471FAFB26A004DBE75 /* microphone-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-image.png"; path = "../../../../../Desktop/microphone-image.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		7ECD4F101FAF8E2F004DBE75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7ECD4F471FAFB26A004DBE75 /* microphone-image.png */,
+				7ECD4F431FAFAE25004DBE75 /* papa-johns.png */,
 				7ECD4F111FAF8E2F004DBE75 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -247,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECD4F201FAF8E30004DBE75 /* LaunchScreen.storyboard in Resources */,
+				7ECD4F481FAFB26A004DBE75 /* microphone-image.png in Resources */,
 				7ECD4F1D1FAF8E2F004DBE75 /* Assets.xcassets in Resources */,
+				7ECD4F441FAFAE25004DBE75 /* papa-johns.png in Resources */,
 				7ECD4F1B1FAF8E2F004DBE75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
