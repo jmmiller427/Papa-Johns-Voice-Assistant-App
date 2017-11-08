@@ -17,6 +17,9 @@
 		7ECD4F361FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */; };
 		7ECD4F441FAFAE25004DBE75 /* papa-johns.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F431FAFAE25004DBE75 /* papa-johns.png */; };
 		7ECD4F481FAFB26A004DBE75 /* microphone-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F471FAFB26A004DBE75 /* microphone-image.png */; };
+		D9703A8BA074DEFA1416D7E4 /* libPods-Papa Johns Voice AssistantUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F490A428870113AD6F43F728 /* libPods-Papa Johns Voice AssistantUITests.a */; };
+		F2AFFE9E2734785FC06231C4 /* libPods-Papa Johns Voice AssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE95A5C6F642C4B1BA2D6E4 /* libPods-Papa Johns Voice AssistantTests.a */; };
+		FB309EC0C68913C94E577823 /* libPods-Papa Johns Voice Assistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47A566A066E6C944A07C560 /* libPods-Papa Johns Voice Assistant.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AD21207EA6A2B6C99A1482A /* Pods-Papa Johns Voice AssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		485FA8F621F80B477F96F2A8 /* Pods-Papa Johns Voice AssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests.release.xcconfig"; sourceTree = "<group>"; };
 		7ECD4F0D1FAF8E2F004DBE75 /* Papa Johns Voice Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Papa Johns Voice Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECD4F111FAF8E2F004DBE75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7ECD4F131FAF8E2F004DBE75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +60,13 @@
 		7ECD4F371FAF8E30004DBE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ECD4F431FAFAE25004DBE75 /* papa-johns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "papa-johns.png"; path = "../../../../../Desktop/papa-johns.png"; sourceTree = "<group>"; };
 		7ECD4F471FAFB26A004DBE75 /* microphone-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-image.png"; path = "../../../../../Desktop/microphone-image.png"; sourceTree = "<group>"; };
+		92AC79B07707CFCB2A40DA71 /* Pods-Papa Johns Voice AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+		994768432849B39FFA180BC3 /* Pods-Papa Johns Voice AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		997C76160D73532012BE3BFC /* Pods-Papa Johns Voice Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice Assistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		A47A566A066E6C944A07C560 /* libPods-Papa Johns Voice Assistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Papa Johns Voice Assistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE02FDB5AE4D76D2EB0B6193 /* Pods-Papa Johns Voice Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice Assistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		DFE95A5C6F642C4B1BA2D6E4 /* libPods-Papa Johns Voice AssistantTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Papa Johns Voice AssistantTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F490A428870113AD6F43F728 /* libPods-Papa Johns Voice AssistantUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Papa Johns Voice AssistantUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB309EC0C68913C94E577823 /* libPods-Papa Johns Voice Assistant.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2AFFE9E2734785FC06231C4 /* libPods-Papa Johns Voice AssistantTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9703A8BA074DEFA1416D7E4 /* libPods-Papa Johns Voice AssistantUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52789C7845A281BF2ACF81CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				997C76160D73532012BE3BFC /* Pods-Papa Johns Voice Assistant.debug.xcconfig */,
+				CE02FDB5AE4D76D2EB0B6193 /* Pods-Papa Johns Voice Assistant.release.xcconfig */,
+				994768432849B39FFA180BC3 /* Pods-Papa Johns Voice AssistantTests.debug.xcconfig */,
+				485FA8F621F80B477F96F2A8 /* Pods-Papa Johns Voice AssistantTests.release.xcconfig */,
+				1AD21207EA6A2B6C99A1482A /* Pods-Papa Johns Voice AssistantUITests.debug.xcconfig */,
+				92AC79B07707CFCB2A40DA71 /* Pods-Papa Johns Voice AssistantUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7ECD4F041FAF8E2F004DBE75 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,8 @@
 				7ECD4F291FAF8E30004DBE75 /* Papa Johns Voice AssistantTests */,
 				7ECD4F341FAF8E30004DBE75 /* Papa Johns Voice AssistantUITests */,
 				7ECD4F0E1FAF8E2F004DBE75 /* Products */,
+				52789C7845A281BF2ACF81CF /* Pods */,
+				9BE1C3A0F1ABE087EBC6D1A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +176,16 @@
 			path = "Papa Johns Voice AssistantUITests";
 			sourceTree = "<group>";
 		};
+		9BE1C3A0F1ABE087EBC6D1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A47A566A066E6C944A07C560 /* libPods-Papa Johns Voice Assistant.a */,
+				DFE95A5C6F642C4B1BA2D6E4 /* libPods-Papa Johns Voice AssistantTests.a */,
+				F490A428870113AD6F43F728 /* libPods-Papa Johns Voice AssistantUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ECD4F3A1FAF8E30004DBE75 /* Build configuration list for PBXNativeTarget "Papa Johns Voice Assistant" */;
 			buildPhases = (
+				F3B5C9DD97540C10E0A24FC0 /* [CP] Check Pods Manifest.lock */,
 				7ECD4F091FAF8E2F004DBE75 /* Sources */,
 				7ECD4F0A1FAF8E2F004DBE75 /* Frameworks */,
 				7ECD4F0B1FAF8E2F004DBE75 /* Resources */,
+				629E949D2958982DFE267CB5 /* [CP] Embed Pods Frameworks */,
+				A07503EA435D1BE197376248 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ECD4F3D1FAF8E30004DBE75 /* Build configuration list for PBXNativeTarget "Papa Johns Voice AssistantTests" */;
 			buildPhases = (
+				DA8D442D7D4B45AC1D776DC9 /* [CP] Check Pods Manifest.lock */,
 				7ECD4F221FAF8E30004DBE75 /* Sources */,
 				7ECD4F231FAF8E30004DBE75 /* Frameworks */,
 				7ECD4F241FAF8E30004DBE75 /* Resources */,
+				886A3FFB3E7E0181B6863419 /* [CP] Embed Pods Frameworks */,
+				9A35CE9B9EA8A848793BDD2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ECD4F401FAF8E30004DBE75 /* Build configuration list for PBXNativeTarget "Papa Johns Voice AssistantUITests" */;
 			buildPhases = (
+				A7517371888C5867B63BF20C /* [CP] Check Pods Manifest.lock */,
 				7ECD4F2D1FAF8E30004DBE75 /* Sources */,
 				7ECD4F2E1FAF8E30004DBE75 /* Frameworks */,
 				7ECD4F2F1FAF8E30004DBE75 /* Resources */,
+				38373A3A290B283756431F85 /* [CP] Embed Pods Frameworks */,
+				4431D5BF7BA386A237371FD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +324,163 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38373A3A290B283756431F85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4431D5BF7BA386A237371FD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		629E949D2958982DFE267CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886A3FFB3E7E0181B6863419 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A35CE9B9EA8A848793BDD2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A07503EA435D1BE197376248 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant-resources.sh",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Classes/AIVoiceRequestButton.xib",
+				"${PODS_ROOT}/ApiAI/ApiAI/VoiceRequest/Resources/beep.caf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7517371888C5867B63BF20C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Papa Johns Voice AssistantUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8D442D7D4B45AC1D776DC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Papa Johns Voice AssistantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B5C9DD97540C10E0A24FC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Papa Johns Voice Assistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7ECD4F091FAF8E2F004DBE75 /* Sources */ = {
@@ -428,6 +634,7 @@
 		};
 		7ECD4F3B1FAF8E30004DBE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997C76160D73532012BE3BFC /* Pods-Papa Johns Voice Assistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
@@ -439,6 +646,7 @@
 		};
 		7ECD4F3C1FAF8E30004DBE75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE02FDB5AE4D76D2EB0B6193 /* Pods-Papa Johns Voice Assistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
@@ -450,6 +658,7 @@
 		};
 		7ECD4F3E1FAF8E30004DBE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994768432849B39FFA180BC3 /* Pods-Papa Johns Voice AssistantTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Papa Johns Voice AssistantTests/Info.plist";
@@ -462,6 +671,7 @@
 		};
 		7ECD4F3F1FAF8E30004DBE75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485FA8F621F80B477F96F2A8 /* Pods-Papa Johns Voice AssistantTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Papa Johns Voice AssistantTests/Info.plist";
@@ -474,6 +684,7 @@
 		};
 		7ECD4F411FAF8E30004DBE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD21207EA6A2B6C99A1482A /* Pods-Papa Johns Voice AssistantUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Papa Johns Voice AssistantUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +696,7 @@
 		};
 		7ECD4F421FAF8E30004DBE75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AC79B07707CFCB2A40DA71 /* Pods-Papa Johns Voice AssistantUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Papa Johns Voice AssistantUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
