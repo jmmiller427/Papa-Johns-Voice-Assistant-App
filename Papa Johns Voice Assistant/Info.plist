@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech Recognition will be used to determine what you said.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The microphone will be used in order to listen that what you say when the microphone button is tapped.</string>
 </dict>
 </plist>
