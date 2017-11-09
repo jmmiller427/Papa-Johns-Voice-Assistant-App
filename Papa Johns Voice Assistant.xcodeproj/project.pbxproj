@@ -262,6 +262,7 @@
 				TargetAttributes = {
 					7ECD4F0C1FAF8E2F004DBE75 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = PLCZNNL8PR;
 						ProvisioningStyle = Automatic;
 					};
 					7ECD4F251FAF8E30004DBE75 = {
@@ -639,7 +640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PLCZNNL8PR;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS499.Papa-Johns-Voice-Assistant";
@@ -655,7 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PLCZNNL8PR;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS499.Papa-Johns-Voice-Assistant";

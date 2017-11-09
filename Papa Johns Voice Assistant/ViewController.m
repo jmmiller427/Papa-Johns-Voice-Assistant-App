@@ -8,26 +8,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
+    // Allocate and initialize the SFSpeechRecognizer.
     recognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
     recognizer.delegate = self;
  
+    // Request access for the SFSpeechRecognizer, user must give access for the speech recognizer to work
+    // once they give access they do not have to do it again
     [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
         switch (status) {
             
+            // Authorized Speech Recognizer
             case SFSpeechRecognizerAuthorizationStatusAuthorized:
                 NSLog(@"Authorized");
                 break;
             
+            // Denied Speech Recognizer
             case SFSpeechRecognizerAuthorizationStatusDenied:
                 NSLog(@"Denied");
                 break;
             
+            // Speech Recognizer Not Determined
             case SFSpeechRecognizerAuthorizationStatusNotDetermined:
                 NSLog(@"Not Determined");
                 break;
             
+            // Speech Recognizer Restricted
             case SFSpeechRecognizerAuthorizationStatusRestricted:
                 NSLog(@"Restricted");
                 break;
@@ -47,79 +53,75 @@
 
 - (void)listen{
     
-    NSLog(@"Started Listen");
     // Create AVAudioEngine, SFSpeechAudioBufferRecognitionRequest,
     avAudio = [[AVAudioEngine alloc] init];
     bufferRecognitionRequest = [[SFSpeechAudioBufferRecognitionRequest alloc] init];
     
-    NSLog(@"Checking recognition task");
     // Check if the SFSpeechRecognitionTask is running or not, if it is
     // then stop it and set it to null
     if (recognitionTask){
         
-        NSLog(@"There was a recognition task, kill it");
         [recognitionTask cancel];
         recognitionTask = nil;
     }
     
-    NSLog(@"Create audio session");
     NSError *error;
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setCategory:AVAudioSessionCategoryRecord error:&error];
     [session setActive:YES error:&error];
     
-    NSLog(@"Create input type");
     AVAudioInputNode *input = avAudio.inputNode;
     bufferRecognitionRequest.shouldReportPartialResults = YES;
     
-    NSLog(@"recognition task should create result");
     recognitionTask = [recognizer recognitionTaskWithRequest:bufferRecognitionRequest resultHandler:^(SFSpeechRecognitionResult * _Nullable result, NSError * _Nullable error) {
         BOOL isFinal = NO;
         
-        NSLog(@"Before if (result)");
+        // Store what the user says in result.
         if (result) {
-            // Whatever you say in the mic after pressing the button should be being logged
-            // in the console.
-            NSLog(@"Result should be printed");
+            
             NSLog(@"RESULT:%@",result.bestTranscription.formattedString);
             isFinal = !result.isFinal;
         }
-        //NSLog(@"If (error)");
-        //if (error) {
-         //   NSLog(@"There was an error");
-           // [avAudio stop];
-          //  [input removeTapOnBus:0];
-          //  bufferRecognitionRequest = nil;
-          //  recognitionTask = nil;
-   //     }
+        
+        // If there is an error, stop the AVAudioEngine and reset recognition tasks
+        if (error) {
+            
+            [avAudio stop];
+            [input removeTapOnBus:0];
+            bufferRecognitionRequest = nil;
+            recognitionTask = nil;
+        }
     }];
     
-    NSLog(@"Create recording format");
+    // Create AVAudioFormat
     AVAudioFormat *recordingFormat = [input outputFormatForBus:0];
     [input installTapOnBus:0 bufferSize:1024 format:recordingFormat block:^(AVAudioPCMBuffer * _Nonnull buffer, AVAudioTime * _Nonnull when) {
         [bufferRecognitionRequest appendAudioPCMBuffer:buffer];
     }];
     
-    NSLog(@"Start the av audio engine");
     // Starts the audio engine, i.e. it starts listening.
     [avAudio prepare];
     [avAudio startAndReturnError:&error];
 }
 
 
+// Create new Delegate Method for the recognizer
 #pragma mark - SFSpeechRecognizerDelegate Delegate Methods
-
 - (void)recognizer:(SFSpeechRecognizer *)speechRecognizer availabilityDidChange:(BOOL)available {
     NSLog(@"Availability:%d",available);
 }
 
 
+// Give the microphone button and IBAction
 - (IBAction)microphone:(id)sender{
     
+    // If the AVAudioEngine is running, stop it and end the recognition request
     if (avAudio.isRunning){
         [avAudio stop];
         [bufferRecognitionRequest endAudio];
     }
+    
+    // If the AVAudioEngine is not running then call listen to set up new buffer to record to
     else{
         [self listen];
     }
