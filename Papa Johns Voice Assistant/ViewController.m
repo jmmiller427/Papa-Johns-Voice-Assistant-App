@@ -82,6 +82,15 @@
             recognitionTask = nil;
         }
     }];
+    
+    AVAudioFormat *recordingFormat = [input outputFormatForBus:0];
+    [input installTapOnBus:0 bufferSize:1024 format:recordingFormat block:^(AVAudioPCMBuffer * _Nonnull buffer, AVAudioTime * _Nonnull when) {
+        [bufferRecognitionRequest appendAudioPCMBuffer:buffer];
+    }];
+    
+    // Starts the audio engine, i.e. it starts listening.
+    [avAudio prepare];
+    [avAudio startAndReturnError:&error];
 }
 
 
