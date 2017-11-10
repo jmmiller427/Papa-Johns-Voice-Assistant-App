@@ -8,6 +8,7 @@
     SFSpeechRecognizer *recognizer;
     SFSpeechAudioBufferRecognitionRequest *bufferRecognitionRequest;
     SFSpeechRecognitionTask *recognitionTask;
+    NSString *res;
 }
 
 

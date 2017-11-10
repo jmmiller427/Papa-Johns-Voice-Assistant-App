@@ -53,6 +53,19 @@
 
 - (void)listen{
     
+                    // API.AI
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    // Initialize API.AI (Now Dialogflow)
+    self.apiAI = [[ApiAI alloc] init];
+    
+    // Define API.AI configuration here.
+    id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
+    configuration.clientAccessToken = @"459d0c7aeb8943d89af0757cdef42bf6";
+    self.apiAI.configuration = configuration;
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    
+                // AVAudioEngine for speech to text
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
     // Create AVAudioEngine, SFSpeechAudioBufferRecognitionRequest,
     avAudio = [[AVAudioEngine alloc] init];
     bufferRecognitionRequest = [[SFSpeechAudioBufferRecognitionRequest alloc] init];
@@ -79,6 +92,20 @@
         // Store what the user says in result.
         if (result) {
             
+                    // Send in the result to API.AI
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            AITextRequest *request = [ApiAI textRequest];
+            request.query = @[result];
+            [request setCompletionBlockSuccess:^(AIRequest *request, id response) {
+                // Handle success ...
+            } failure:^(AIRequest *request, NSError *error) {
+                // Handle error ...
+            }];
+            
+            [_apiAI enqueue:request];
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            
+            // Print out the result from speech to text
             NSLog(@"RESULT:%@",result.bestTranscription.formattedString);
             isFinal = !result.isFinal;
         }
@@ -102,6 +129,7 @@
     // Starts the audio engine, i.e. it starts listening.
     [avAudio prepare];
     [avAudio startAndReturnError:&error];
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
 }
 
 
