@@ -1,6 +1,15 @@
 #import "ViewController.h"
 
+#import <UIKit/UIKit.h>
+
+#import "ApiAI.h"
+#import "AIDefaultConfiguration.h"
+#import "AIResponse.h"
+#import "AIRequestEntity.h"
+
 @interface ViewController ()
+
+@property(nonatomic, strong) ApiAI *apiai;
 
 @end
 
@@ -53,16 +62,19 @@
 
 - (void)listen{
     
-                    // API.AI
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    // Initialize API.AI (Now Dialogflow)
-    self.apiAI = [[ApiAI alloc] init];
+    ApiAI *apiai = [ApiAI sharedApiAI];
     
-    // Define API.AI configuration here.
-    id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
+    AIDefaultConfiguration *configuration = [[AIDefaultConfiguration alloc] init];
+    
     configuration.clientAccessToken = @"459d0c7aeb8943d89af0757cdef42bf6";
-    self.apiAI.configuration = configuration;
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    
+    //    configuration.baseURL = [NSURL URLWithString:@"https://dev.api.ai/api"];
+    
+    [apiai setConfiguration:configuration];
+    
+    apiai.lang = @"en";
+    
+    self.apiai = apiai;
     
                 // AVAudioEngine for speech to text
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -94,7 +106,7 @@
             
                     // Send in the result to API.AI
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
-            AITextRequest *request = [ApiAI textRequest];
+            AITextRequest *request = [_apiai textRequest];
             request.query = @[result];
             [request setCompletionBlockSuccess:^(AIRequest *request, id response) {
                 // Handle success ...
