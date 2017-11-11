@@ -15,8 +15,8 @@
 		7ECD4F201FAF8E30004DBE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECD4F1E1FAF8E30004DBE75 /* LaunchScreen.storyboard */; };
 		7ECD4F2B1FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F2A1FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantTests.m */; };
 		7ECD4F361FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */; };
-		7ED384B81FB3CE78007641EE /* microphone-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED384B61FB3CE78007641EE /* microphone-image.png */; };
-		7ED384B91FB3CE78007641EE /* papa-johns.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED384B71FB3CE78007641EE /* papa-johns.png */; };
+		84257E461FB7743500156AF8 /* papa-johns.png in Resources */ = {isa = PBXBuildFile; fileRef = 84257E451FB7743400156AF8 /* papa-johns.png */; };
+		84257E481FB7743900156AF8 /* microphone-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 84257E471FB7743900156AF8 /* microphone-image.png */; };
 		D9703A8BA074DEFA1416D7E4 /* libPods-Papa Johns Voice AssistantUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F490A428870113AD6F43F728 /* libPods-Papa Johns Voice AssistantUITests.a */; };
 		F2AFFE9E2734785FC06231C4 /* libPods-Papa Johns Voice AssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE95A5C6F642C4B1BA2D6E4 /* libPods-Papa Johns Voice AssistantTests.a */; };
 		FB309EC0C68913C94E577823 /* libPods-Papa Johns Voice Assistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47A566A066E6C944A07C560 /* libPods-Papa Johns Voice Assistant.a */; };
@@ -58,8 +58,8 @@
 		7ECD4F311FAF8E30004DBE75 /* Papa Johns Voice AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Papa Johns Voice AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Papa_Johns_Voice_AssistantUITests.m; sourceTree = "<group>"; };
 		7ECD4F371FAF8E30004DBE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ED384B61FB3CE78007641EE /* microphone-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-image.png"; path = "../../../../../../Desktop/microphone-image.png"; sourceTree = "<group>"; };
-		7ED384B71FB3CE78007641EE /* papa-johns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "papa-johns.png"; path = "../../../../../../Desktop/papa-johns.png"; sourceTree = "<group>"; };
+		84257E451FB7743400156AF8 /* papa-johns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "papa-johns.png"; path = "../../papa-johns.png"; sourceTree = "<group>"; };
+		84257E471FB7743900156AF8 /* microphone-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-image.png"; path = "../../microphone-image.png"; sourceTree = "<group>"; };
 		92AC79B07707CFCB2A40DA71 /* Pods-Papa Johns Voice AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		994768432849B39FFA180BC3 /* Pods-Papa Johns Voice AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		997C76160D73532012BE3BFC /* Pods-Papa Johns Voice Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice Assistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 		7ECD4F101FAF8E2F004DBE75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7ED384B61FB3CE78007641EE /* microphone-image.png */,
-				7ED384B71FB3CE78007641EE /* papa-johns.png */,
+				84257E471FB7743900156AF8 /* microphone-image.png */,
+				84257E451FB7743400156AF8 /* papa-johns.png */,
 				7ECD4F111FAF8E2F004DBE75 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -262,7 +262,7 @@
 				TargetAttributes = {
 					7ECD4F0C1FAF8E2F004DBE75 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = PLCZNNL8PR;
+						DevelopmentTeam = 2M689A3JG2;
 						ProvisioningStyle = Automatic;
 					};
 					7ECD4F251FAF8E30004DBE75 = {
@@ -302,11 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84257E481FB7743900156AF8 /* microphone-image.png in Resources */,
 				7ECD4F201FAF8E30004DBE75 /* LaunchScreen.storyboard in Resources */,
 				7ECD4F1D1FAF8E2F004DBE75 /* Assets.xcassets in Resources */,
 				7ECD4F1B1FAF8E2F004DBE75 /* Main.storyboard in Resources */,
-				7ED384B81FB3CE78007641EE /* microphone-image.png in Resources */,
-				7ED384B91FB3CE78007641EE /* papa-johns.png in Resources */,
+				84257E461FB7743500156AF8 /* papa-johns.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PLCZNNL8PR;
+				DEVELOPMENT_TEAM = 2M689A3JG2;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS499.Papa-Johns-Voice-Assistant";
@@ -668,7 +668,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PLCZNNL8PR;
+				DEVELOPMENT_TEAM = 2M689A3JG2;
 				INFOPLIST_FILE = "Papa Johns Voice Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS499.Papa-Johns-Voice-Assistant";
