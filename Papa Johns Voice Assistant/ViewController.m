@@ -15,8 +15,14 @@
 
 @implementation ViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    [self performSegueWithIdentifier:@"loginView" sender:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self performSegueWithIdentifier:@"loginView" sender:self];
     
     dict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
 
@@ -166,20 +172,6 @@
     // If the AVAudioEngine is not running then call listen to set up new buffer to record to
     else{
         [self listen];
-    }
-}
-
-
-- (IBAction)loginButton:(id)sender{
-    
-    if ([[dict objectForKey:username.text]isEqualToString:username.text]) {
-        if ([[dict objectForKey:password.text]isEqualToString:password.text]){
-        
-        }
-    }
-    else{
-        UIAlertView *incorrect = [[UIAlertView alloc] initWithTitle:@"Incorrect Credentials" message:@"The username or password entered was incorrect" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [incorrect show];
     }
 }
 

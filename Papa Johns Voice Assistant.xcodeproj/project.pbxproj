@@ -17,6 +17,7 @@
 		7ECD4F361FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD4F351FAF8E30004DBE75 /* Papa_Johns_Voice_AssistantUITests.m */; };
 		84257E4E1FB7CE0A00156AF8 /* microphone-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 84257E4D1FB7CE0A00156AF8 /* microphone-image.png */; };
 		84257E501FB7CE1500156AF8 /* papa-johns.png in Resources */ = {isa = PBXBuildFile; fileRef = 84257E4F1FB7CE1400156AF8 /* papa-johns.png */; };
+		8477F4F01FB8C3510039D0E8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F4EF1FB8C3510039D0E8 /* RegisterViewController.m */; };
 		D9703A8BA074DEFA1416D7E4 /* libPods-Papa Johns Voice AssistantUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F490A428870113AD6F43F728 /* libPods-Papa Johns Voice AssistantUITests.a */; };
 		F2AFFE9E2734785FC06231C4 /* libPods-Papa Johns Voice AssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE95A5C6F642C4B1BA2D6E4 /* libPods-Papa Johns Voice AssistantTests.a */; };
 		FB309EC0C68913C94E577823 /* libPods-Papa Johns Voice Assistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47A566A066E6C944A07C560 /* libPods-Papa Johns Voice Assistant.a */; };
@@ -60,6 +61,8 @@
 		7ECD4F371FAF8E30004DBE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84257E4D1FB7CE0A00156AF8 /* microphone-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-image.png"; path = "../../microphone-image.png"; sourceTree = "<group>"; };
 		84257E4F1FB7CE1400156AF8 /* papa-johns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "papa-johns.png"; path = "../../papa-johns.png"; sourceTree = "<group>"; };
+		8477F4EE1FB8C3510039D0E8 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		8477F4EF1FB8C3510039D0E8 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		92AC79B07707CFCB2A40DA71 /* Pods-Papa Johns Voice AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantUITests/Pods-Papa Johns Voice AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		994768432849B39FFA180BC3 /* Pods-Papa Johns Voice AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice AssistantTests/Pods-Papa Johns Voice AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		997C76160D73532012BE3BFC /* Pods-Papa Johns Voice Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Papa Johns Voice Assistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Papa Johns Voice Assistant/Pods-Papa Johns Voice Assistant.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				7ECD4F1E1FAF8E30004DBE75 /* LaunchScreen.storyboard */,
 				7ECD4F211FAF8E30004DBE75 /* Info.plist */,
 				7ECD4F101FAF8E2F004DBE75 /* Supporting Files */,
+				8477F4EE1FB8C3510039D0E8 /* RegisterViewController.h */,
+				8477F4EF1FB8C3510039D0E8 /* RegisterViewController.m */,
 			);
 			path = "Papa Johns Voice Assistant";
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				7ECD4F181FAF8E2F004DBE75 /* ViewController.m in Sources */,
 				7ECD4F151FAF8E2F004DBE75 /* AppDelegate.m in Sources */,
 				7ECD4F121FAF8E2F004DBE75 /* main.m in Sources */,
+				8477F4F01FB8C3510039D0E8 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
