@@ -41,6 +41,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.0" green="0.57566946744918823" blue="0.44089853763580322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="e10-f9-5BG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-Se-l17">
                                 <rect key="frame" x="46" y="446" width="80" height="25"/>
