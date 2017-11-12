@@ -1,1 +1,0 @@
-../../../ApiAI/ApiAI/VoiceRequest/Private/AlgorithmDetector/Algorithms/AdaptiveThresold/AdaptiveThresold.h
