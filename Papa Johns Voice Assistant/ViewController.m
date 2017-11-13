@@ -8,12 +8,11 @@
 #import "AIRequestEntity.h"
 
 @interface ViewController ()
-
 @property(nonatomic, strong) ApiAI *apiai;
-
 @end
 
 @implementation ViewController
+@synthesize textLabel;
 
 - (void)viewDidAppear:(BOOL)animated{
     
@@ -63,27 +62,19 @@
     }];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void)listen{
     
+    // Initialize connection with Dialogflow
     ApiAI *apiai = [ApiAI sharedApiAI];
-    
     AIDefaultConfiguration *configuration = [[AIDefaultConfiguration alloc] init];
-    
     configuration.clientAccessToken = @"459d0c7aeb8943d89af0757cdef42bf6";
-    
-    //    configuration.baseURL = [NSURL URLWithString:@"https://dev.api.ai/api"];
-    
     [apiai setConfiguration:configuration];
-    
     apiai.lang = @"en";
-    
     self.apiai = apiai;
     
                 // AVAudioEngine for speech to text
@@ -123,18 +114,20 @@
             } failure:^(AIRequest *request, NSError *error) {
                 // Handle error ...
             }];
-            
+
             [_apiAI enqueue:request];
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
             
+            // Update the text label on the screen
+            textLabel.text = result.bestTranscription.formattedString;
+            
             // Print out the result from speech to text
-            NSLog(@"RESULT:%@",result.bestTranscription.formattedString);
             isFinal = !result.isFinal;
         }
         
         // If there is an error, stop the AVAudioEngine and reset recognition tasks
         if (error) {
-            
+        
             [avAudio stop];
             [input removeTapOnBus:0];
             bufferRecognitionRequest = nil;
@@ -155,13 +148,6 @@
 }
 
 
-// Create new Delegate Method for the recognizer
-#pragma mark - SFSpeechRecognizerDelegate Delegate Methods
-- (void)recognizer:(SFSpeechRecognizer *)speechRecognizer availabilityDidChange:(BOOL)available {
-    NSLog(@"Availability:%d",available);
-}
-
-
 // Give the microphone button and IBAction
 - (IBAction)microphone:(id)sender{
     
@@ -176,6 +162,5 @@
         [self listen];
     }
 }
-
 
 @end
