@@ -18,6 +18,7 @@
 - (IBAction)loginButton:(id)sender;
 
 @property(nonatomic, strong) ApiAI *apiAI;
+@property(nonatomic, retain) IBOutlet UILabel *textLabel;
 
 
 @end
