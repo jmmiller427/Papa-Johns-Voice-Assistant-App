@@ -25,6 +25,12 @@
     {
         [self performSegueWithIdentifier:@"loginView" sender:self];
     }
+    else
+    {
+        bool loggedIn = NO;
+        [defaults setBool:loggedIn forKey:@"loggedIn"];
+        [defaults synchronize];
+    }
 }
 
 - (void)viewDidLoad {
