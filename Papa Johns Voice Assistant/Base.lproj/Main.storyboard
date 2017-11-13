@@ -224,18 +224,26 @@
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1C-aS-vWz">
+                                <rect key="frame" x="16" y="316" width="343" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="4ld-Zd-ZZq"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="textLabel" destination="X1C-aS-vWz" id="L6X-uv-BcJ"/>
                         <segue destination="mEK-jL-kfP" kind="presentation" identifier="loginView" id="ZRN-Jh-Jd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-330" y="140"/>
+            <point key="canvasLocation" x="-330.39999999999998" y="139.65517241379311"/>
         </scene>
     </scenes>
     <resources>
@@ -243,7 +251,6 @@
         <image name="papa-johns.png" width="363" height="139"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NX7-iC-tGW"/>
         <segue reference="mzc-ns-HAk"/>
     </inferredMetricsTieBreakers>
 </document>

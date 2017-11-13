@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+@synthesize textLabel;
+
 - (void)viewDidAppear:(BOOL)animated{
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -126,6 +128,8 @@
             
             [_apiAI enqueue:request];
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            
+            textLabel.text = result.bestTranscription.formattedString;
             
             // Print out the result from speech to text
             NSLog(@"RESULT:%@",result.bestTranscription.formattedString);
