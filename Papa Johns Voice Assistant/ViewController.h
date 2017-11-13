@@ -9,10 +9,6 @@
     SFSpeechAudioBufferRecognitionRequest *bufferRecognitionRequest;
     SFSpeechRecognitionTask *recognitionTask;
     NSString *res;
-    
-    IBOutlet UITextField *username;
-    IBOutlet UITextField *password;
-    NSDictionary *dict;
 }
 
 @property(nonatomic, strong) ApiAI *apiAI;

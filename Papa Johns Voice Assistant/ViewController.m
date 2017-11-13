@@ -16,15 +16,17 @@
 @implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated{
-    [self performSegueWithIdentifier:@"loginView" sender:self];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    bool log = [defaults boolForKey:@"loggedIn"];
+    if(!log)
+    {
+        [self performSegueWithIdentifier:@"loginView" sender:self];
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self performSegueWithIdentifier:@"loginView" sender:self];
-    
-    dict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
 
     // Allocate and initialize the SFSpeechRecognizer.
     recognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
