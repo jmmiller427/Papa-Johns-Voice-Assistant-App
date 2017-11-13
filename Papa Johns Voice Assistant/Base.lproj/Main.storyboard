@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x5G-w1-Nxz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login Controller-->
+        <!--View Controller-->
         <scene sceneID="Gtj-0H-3ol">
             <objects>
-                <viewController storyboardIdentifier="LoginController" id="mEK-jL-kfP" customClass="LoginController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="mEK-jL-kfP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NaC-Do-8Av"/>
                         <viewControllerLayoutGuide type="bottom" id="zN8-XT-suf"/>
@@ -126,9 +126,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
-                                <connections>
-                                    <action selector="usernameField:" destination="oPb-HI-3x5" eventType="editingDidEnd" id="6XH-V6-itJ"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dq1-eJ-MAe" customClass="passwordField">
                                 <rect key="frame" x="16" y="262" width="343" height="30"/>
@@ -136,9 +133,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                <connections>
-                                    <action selector="passwordField:" destination="oPb-HI-3x5" eventType="editingDidEnd" id="xTa-FK-fIm"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-enter Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Et-Zu-8m4">
                                 <rect key="frame" x="16" y="315" width="343" height="21"/>
@@ -153,11 +147,8 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                <connections>
-                                    <action selector="passwordSecondField:" destination="oPb-HI-3x5" eventType="editingDidEnd" id="5qR-N3-mTv"/>
-                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-Yu-Gbq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-Yu-Gbq" customClass="registerButton">
                                 <rect key="frame" x="98" y="391" width="179" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87502545119999997" green="0.11742579190000001" blue="0.22516688700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -175,14 +166,22 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mEK-jL-kfP" kind="presentation" identifier="backToLoginView" id="mzc-ns-HAk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="dq1-eJ-MAe" id="Ekx-yr-W5h"/>
+                        <outlet property="repeatPasswordField" destination="6WC-8m-cJ7" id="gqP-ef-zym"/>
+                        <outlet property="usernameField" destination="ppz-xk-QoF" id="dXC-Ia-h08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVH-v4-gfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="816.50246305418727"/>
+            <point key="canvasLocation" x="412" y="826"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -231,27 +230,12 @@
             </objects>
             <point key="canvasLocation" x="-330" y="140"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="P9x-Qp-28F">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3I6-PB-Izy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x5G-w1-Nxz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Ow-0k-p1N">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Mm-uT-AVS"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-1070" y="140"/>
-        </scene>
     </scenes>
     <resources>
         <image name="microphone-image.png" width="100" height="100"/>
         <image name="papa-johns.png" width="363" height="139"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mzc-ns-HAk"/>
+    </inferredMetricsTieBreakers>
 </document>
