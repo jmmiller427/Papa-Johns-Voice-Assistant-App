@@ -14,5 +14,8 @@
 @property(nonatomic, strong) ApiAI *apiAI;
 @property(nonatomic, retain) IBOutlet UILabel *textLabel;
 
+extern NSString *result2;
+extern NSInteger newTimer;
+
 @end
 
