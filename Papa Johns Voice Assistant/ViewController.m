@@ -13,6 +13,8 @@
 
 @implementation ViewController
 @synthesize textLabel;
+NSString *result2 = @"";
+NSInteger newTime = 30;
 
 - (void)viewDidAppear:(BOOL)animated{
     
@@ -121,6 +123,9 @@
             // Update the text label on the screen
             textLabel.text = result.bestTranscription.formattedString;
             
+            result2 = @"";
+            result2 = result.bestTranscription.formattedString;
+            
             // Print out the result from speech to text
             isFinal = !result.isFinal;
         }
@@ -155,6 +160,29 @@
     if (avAudio.isRunning){
         [avAudio stop];
         [bufferRecognitionRequest endAudio];
+        
+        // If the user requests an order, create an opportunity for the user to cancel their order
+        if ([result2 containsString:@"order"] || [result2 containsString:@"Order"]){
+            
+            // Make a timer
+            [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countDown:)
+                                           userInfo:nil repeats:YES];
+            
+            // Create the pop up window
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Cancel" message:@"Would you like to proceed with your order?" preferredStyle:UIAlertControllerStyleAlert];
+            
+            // Add two actions, cancel and proceed
+            UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {[self cancelOrder];}];
+            
+            UIAlertAction* proceedAction = [UIAlertAction actionWithTitle:@"Proceed" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {[self proceedOrder];}];
+            
+            [alert addAction:cancelAction];
+            [alert addAction:proceedAction];
+            
+            [self presentViewController:(alert) animated:true completion:nil];
+        }else{
+            // If an order is not placed, process what the user requested
+        }
     }
     
     // If the AVAudioEngine is not running then call listen to set up new buffer to record to
@@ -162,5 +190,30 @@
         [self listen];
     }
 }
+
+
+// Create countdown for closing pop up window and placing an order
+-(void)countDown:(NSTimer *)timer {
+    // If the timer is 0, stop the timer, place the order and close the pop up
+    if (--newTime == 0) {
+        [timer invalidate];
+        [self proceedOrder];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        newTime = 30;
+    }
+}
+
+
+// Proceed with order if user hits proceed button or waits 30 seconds
+- (void)proceedOrder{
+    textLabel.text = @"Order Placed!";
+}
+
+
+// Cancel order if user hits cancel button
+- (void)cancelOrder{
+    textLabel.text = @"Order Canceled!";
+}
+
 
 @end
